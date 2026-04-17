@@ -6,17 +6,12 @@ public class CadastroCliente {
         // Entrada de dados
         String nome = JOptionPane.showInputDialog("Digite o nome do cliente:");
 
-        int idade = Integer.parseInt(
-                JOptionPane.showInputDialog("Digite a idade:")
-        );
+        int idade = Integer.parseInt(JOptionPane.showInputDialog("Digite a idade:"));
 
-        double salario = Double.parseDouble(
-                JOptionPane.showInputDialog("Digite o salário mensal:")
-        );
-
-        double emprestimo = Double.parseDouble(
-                JOptionPane.showInputDialog("Digite o valor do empréstimo desejado:")
-        );
+        double salario = Double.parseDouble(JOptionPane.showInputDialog("Digite o salário mensal:") );
+        
+        double emprestimo = Double.parseDouble(JOptionPane.showInputDialog
+        ("Digite o valor do empréstimo desejado:"));
 
         // Saída de dados
         String mensagem = "===== DADOS DO CLIENTE =====\n"

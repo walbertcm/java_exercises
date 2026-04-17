@@ -6,26 +6,17 @@ public class AnaliseCreditoSimples {
 
         // Entrada de dados
         String nome = JOptionPane.showInputDialog("Digite o nome do cliente:");
-
-        double salario = Double.parseDouble(
-                JOptionPane.showInputDialog("Digite o salário mensal:")
-        );
-
-        double parcela = Double.parseDouble(
-                JOptionPane.showInputDialog("Digite o valor da parcela desejada:")
-        );
+        double salario = Double.parseDouble(JOptionPane.showInputDialog("Digite o salário mensal:"));
+        double parcela = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor da parcela desejada:"));
 
         // Cálculo
         double limite = salario * 0.30;
-
         String resultado;
-
         if (parcela <= limite) {
             resultado = "Crédito pode ser analisado.";
         } else {
             resultado = "Crédito negado.";
         }
-
         // Confirmação simples
         int confirmacao = JOptionPane.showConfirmDialog(
                 null,
@@ -38,7 +29,6 @@ public class AnaliseCreditoSimples {
 
             // Opções extras
             String[] opcoes = {"Mostrar Resumo", "Mostrar Apenas Resultado"};
-
             int escolha = JOptionPane.showOptionDialog(
                     null,
                     "Escolha como deseja visualizar:",
@@ -49,7 +39,6 @@ public class AnaliseCreditoSimples {
                     opcoes,
                     opcoes[0]
             );
-
             if (escolha == 0) {
                 // Mostra tudo
                 JOptionPane.showMessageDialog(
